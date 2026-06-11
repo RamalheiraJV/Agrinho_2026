@@ -109,15 +109,32 @@
 
   <footer>
   <p>© 2026 Agronomia Sustentável</p>
-  <div class="acessibilidade">
+</footer>
+ <div class="acessibilidade">
     <button id="aumentar-fonte">🔠 A+</button>
     <button id="diminuir-fonte">🔡 A-</button>
     <button id="alto-contraste">🌓 Alto Contraste</button>
 </div>
 
-
-</footer>
-
 <script src="main.js"></script>
+<script>
+  let tamanhoFonte = 16;
+
+  document.getElementById("aumentar-fonte").addEventListener("click", () => {
+    tamanhoFonte += 2;
+    document.body.style.fontSize = tamanhoFonte + "px";
+  });
+
+  document.getElementById("diminuir-fonte").addEventListener("click", () => {
+    if (tamanhoFonte > 10) {
+      tamanhoFonte -= 2;
+      document.body.style.fontSize = tamanhoFonte + "px";
+    }
+  });
+
+  document.getElementById("alto-contraste").addEventListener("click", () => {
+    document.body.classList.toggle("alto-contraste");
+  });
+</script>
 </body>
 </html>
