@@ -6,7 +6,7 @@ Projeto desenvolvido para o Concurso Agrinho 2026 – Categoria Programação, n
 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente
 
 📌 Sobre o Projeto
-O projeto “Título do projeto” (explique o seu projeto, o que ele apresenta)
+O projeto “Agro Sustentavel" fala sobre praticas sustentaveis no meio agricola onde a tecnologia vem ajudando cada vez mais à uma pratica mais limpa que não prejudica o meio ambiente.
 
 Por meio de textos, imagens, quiz, curiosidades, vídeo e história em quadrinhos, o site busca aproximar o visitante da realidade do campo e destacar a importância de produzir com responsabilidade ambiental.
 🎯 Objetivo
