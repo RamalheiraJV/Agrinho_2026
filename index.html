@@ -112,30 +112,27 @@
   </footer>
 
 </body>
-</html>
-
 <div class="acessibilidade">
-    <button id="aumentar-fonte">🔠 A+</button>
-    <button id="diminuir-fonte">🔡 A-</button>
-    <button id="alto-contraste">🌓 Alto Contraste</button>
-</div>
+  <button id="aumentar-fonte" title="Aumentar fonte">🔠 A+</button>
+  <button id="diminuir-fonte" title="Diminuir fonte">🔡 A-</button>
+  <button id="alto-contraste" title="Alto contraste">🌓 Contraste</button>
+</div><script>
+  let tamanhoFonte = 16;
 
-<script>
-    let tamanhoFonte = 16;
+  document.getElementById("aumentar-fonte").addEventListener("click", () => {
+    tamanhoFonte += 2;
+    document.body.style.fontSize = tamanhoFonte + "px";
+  });
 
-    document.getElementById("aumentar-fonte").addEventListener("click", () => {
-        tamanhoFonte += 2;
-        document.body.style.fontSize = tamanhoFonte + "px";
-    });
+  document.getElementById("diminuir-fonte").addEventListener("click", () => {
+    if (tamanhoFonte > 10) {
+      tamanhoFonte -= 2;
+      document.body.style.fontSize = tamanhoFonte + "px";
+    }
+  });
 
-    document.getElementById("diminuir-fonte").addEventListener("click", () => {
-        if (tamanhoFonte > 10) {
-            tamanhoFonte -= 2;
-            document.body.style.fontSize = tamanhoFonte + "px";
-        }
-    });
-
-    document.getElementById("alto-contraste").addEventListener("click", () => {
-        document.body.classList.toggle("alto-contraste");
-    });
+  document.getElementById("alto-contraste").addEventListener("click", () => {
+    document.body.classList.toggle("alto-contraste");
+  });
 </script>
+</html>
