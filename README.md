@@ -23,7 +23,6 @@ O projeto conta com as seguintes funcionalidades:
 ♿ Botão de acessibilidade;
 🔠 Opção de aumentar e diminuir fonte;
 🌓 Modo de alto contraste;
-📲 Layout adaptado para diferentes tamanhos de tela. (nem todos têm)
 💻 Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando apenas tecnologias básicas de front-end:
 HTML5
@@ -57,7 +56,6 @@ O projeto inclui recursos de acessibilidade para melhorar a experiência dos usu
 🔠 Botão para aumentar o tamanho da fonte;
 🔡 Botão para diminuir o tamanho da fonte;
 🌓 Modo de alto contraste;
-🖼️ Textos alternativos em imagens;
 
 
 🌿 Sustentabilidade
