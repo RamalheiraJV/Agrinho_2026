@@ -1,5 +1,5 @@
 
-  let tamanhoFonte = 16;
+let tamanhoFonte = 16;
 
   document.getElementById("aumentar-fonte").addEventListener("click", () => {
     tamanhoFonte += 2;
