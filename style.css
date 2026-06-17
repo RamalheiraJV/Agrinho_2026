@@ -137,108 +137,72 @@ footer{
   padding: 20px;
 }
 
-/* Acessibilidade */
-.acessibilidade{
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  display: flex;
-  gap: 8px;
-  z-index: 1000;
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    margin: 20px;
 }
 
-.acessibilidade button{
-  background: #1b5e20;
-  color: white;
-  border: none;
-  padding: 10px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
+/* Botão flutuante */
+.accessibility-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #005fcc;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
 }
 
-.acessibilidade button:hover{
-  background: #2e7d32;
+.accessibility-btn:hover {
+    background-color: #0048a0;
 }
 
-/* Alto contraste */
-.alto-contraste{
-  background: #000 !important;
-  color: #fff !important;
+/* Menu */
+.accessibility-menu {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 999;
 }
 
-.alto-contraste header,
-.alto-contraste nav,
-.alto-contraste footer,
-.alto-contraste .card,
-.alto-contraste .beneficios{
-  background: #111 !important;
-  color: #fff !important;
+.accessibility-menu.active {
+    display: block;
 }
 
-.alto-contraste h1,
-.alto-contraste h2,
-.alto-contraste h3,
-.alto-contraste p,
-.alto-contraste li{
-  color: #fff !important;
+.accessibility-menu button {
+    display: block;
+    width: 180px;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.alto-contraste a{
-  color: #ffff00 !important;
+.accessibility-menu button:hover {
+    background: #dcdcdc;
 }
 
-.alto-contraste .botao{
-  background: #ffff00 !important;
-  color: #000 !important;
-}
-/* Botão principal de acessibilidade */
-.btn-acessibilidade{
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 55px;
-  height: 55px;
-  border: none;
-  border-radius: 50%;
-  background: #1b5e20;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 1001;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+/* Modo alto contraste */
+.high-contrast {
+    background-color: #000;
+    color: #ffff00;
 }
 
-.btn-acessibilidade:hover{
-  background: #2e7d32;
-}
-
-/* Painel oculto */
-.acessibilidade{
-  position: fixed;
-  top: 80px;
-  right: 15px;
-  display: none;
-  flex-direction: column;
-  gap: 8px;
-  z-index: 1000;
-}
-
-.acessibilidade.mostrar{
-  display: flex;
-}
-
-.acessibilidade button{
-  background: #1b5e20;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.acessibilidade button:hover{
-  background: #2e7d32;
+.high-contrast a {
+    color: #00ffff;
 }
