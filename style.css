@@ -144,65 +144,85 @@ body {
     margin: 20px;
 }
 
-/* Botão flutuante */
-.accessibility-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    background-color: #005fcc;
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
+/* ===== ACESSIBILIDADE ===== */
+
+/* Botão no canto superior direito */
+.accessibility-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #005fcc;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 
-.accessibility-btn:hover {
-    background-color: #0048a0;
+.accessibility-btn:hover{
+  background: #0047a3;
+  transform: scale(1.05);
 }
 
 /* Menu */
-.accessibility-menu {
-    position: fixed;
-    right: 20px;
-    bottom: 90px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    display: none;
-    z-index: 999;
+.accessibility-menu{
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 9999;
 }
 
-.accessibility-menu.active {
-    display: block;
+.accessibility-menu.active{
+  display: block;
 }
 
-.accessibility-menu button {
-    display: block;
-    width: 180px;
-    margin: 5px 0;
-    padding: 10px;
-    border: none;
-    background: #f0f0f0;
-    border-radius: 5px;
-    cursor: pointer;
+.accessibility-menu button{
+  display: block;
+  width: 180px;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.accessibility-menu button:hover {
-    background: #dcdcdc;
+.accessibility-menu button:hover{
+  background: #c8e6c9;
 }
 
-/* Modo alto contraste */
-.high-contrast {
-    background-color: #000;
-    color: #ffff00;
+/* Alto contraste */
+.high-contrast{
+  background: #000 !important;
+  color: #fff !important;
 }
 
-.high-contrast a {
-    color: #00ffff;
+.high-contrast header,
+.high-contrast nav,
+.high-contrast footer,
+.high-contrast .card,
+.high-contrast .beneficios{
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast p,
+.high-contrast li,
+.high-contrast a{
+  color: #ffff00 !important;
 }

@@ -120,24 +120,16 @@
 <body>
 
     <h1>Meu Site</h1>
-    <p>Exemplo de botão de acessibilidade.</p>
+<!-- Botão de Acessibilidade -->
+<button id="accessibilityBtn" class="accessibility-btn" aria-label="Menu de acessibilidade">
+  ♿
+</button>
 
-    <!-- Botão de acessibilidade -->
-    <button
-        class="accessibility-btn"
-        id="accessibilityBtn"
-        aria-label="Abrir menu de acessibilidade">
-        ♿
-    </button>
-
-    <!-- Menu -->
-    <div class="accessibility-menu" id="accessibilityMenu">
-        <button onclick="changeFontSize(1)">Aumentar fonte</button>
-        <button onclick="changeFontSize(-1)">Diminuir fonte</button>
-        <button onclick="toggleContrast()">Alto contraste</button>
-    </div>
-
-
+<div id="accessibilityMenu" class="accessibility-menu">
+  <button onclick="changeFontSize(1)">A+ Aumentar fonte</button>
+  <button onclick="changeFontSize(-1)">A- Diminuir fonte</button>
+  <button onclick="toggleContrast()">◐ Alto contraste</button>
+</div>
 <script src="main.js"></script>
 </body>
 </html>
