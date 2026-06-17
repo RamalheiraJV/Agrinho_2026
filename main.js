@@ -1,5 +1,4 @@
-
-    let tamanhoFonte = 16;
+ let tamanhoFonte = 16;
 
     document.getElementById("aumentar-fonte").addEventListener("click", () => {
         tamanhoFonte += 2;
@@ -11,8 +10,4 @@
             tamanhoFonte -= 2;
             document.body.style.fontSize = tamanhoFonte + "px";
         }
-    });
-
-    document.getElementById("alto-contraste").addEventListener("click", () => {
-        document.body.classList.toggle("alto-contraste");
     });
