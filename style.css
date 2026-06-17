@@ -215,7 +215,7 @@ body {
 .high-contrast .card,
 .high-contrast .beneficios{
   background: #111 !important;
-  color: #fff !important;
+  color: hsl(0, 97%, 46%) !important;
 }
 
 .high-contrast h1,
@@ -224,5 +224,5 @@ body {
 .high-contrast p,
 .high-contrast li,
 .high-contrast a{
-  color: #ffff00 !important;
+  color: hsl(204, 97%, 49%) !important;
 }
