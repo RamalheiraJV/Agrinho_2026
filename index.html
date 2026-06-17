@@ -110,22 +110,33 @@
   <footer>
   <p>© 2026 Agronomia Sustentavel</p>
 </footer>
-<!-- Botão de acessibilidade -->
-<button id="btn-acessibilidade" class="btn-acessibilidade">
-  ♿
-</button>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- Painel de acessibilidade -->
-<div class="acessibilidade" id="painel-acessibilidade">
-  <button id="aumentar-fonte">🔠 A+</button>
-  <button id="diminuir-fonte">🔡 A-</button>
-  <button id="alto-contraste">🌓 Contraste</button>
-</div> 
-<div class="acessibilidade">
-    <button id="aumentar-fonte">🔠 A+</button>
-    <button id="diminuir-fonte">🔡 A-</button>
-    <button id="alto-contraste">🌓 Alto Contraste</button>
-</div>
+    <h1>Meu Site</h1>
+    <p>Exemplo de botão de acessibilidade.</p>
+
+    <!-- Botão de acessibilidade -->
+    <button
+        class="accessibility-btn"
+        id="accessibilityBtn"
+        aria-label="Abrir menu de acessibilidade">
+        ♿
+    </button>
+
+    <!-- Menu -->
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <button onclick="changeFontSize(1)">Aumentar fonte</button>
+        <button onclick="changeFontSize(-1)">Diminuir fonte</button>
+        <button onclick="toggleContrast()">Alto contraste</button>
+    </div>
+
 
 <script src="main.js"></script>
 </body>
